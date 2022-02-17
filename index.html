@@ -36,7 +36,7 @@
                     <h3 class="text-3xl font-medium text-center ">Income</h3>
                     <div class="flex justify-center items-center px-4 2xl:px-36 gap-4 my-5 ">
                         <p class="text-xl font-medium ">Income:</p>
-                        <input class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="10,000 ">
+                        <input id="incomeInputField" class="bg-white py-2 px-2 border-2 rounded w-full" type="text" placeholder="please type your income">
                     </div>
 
                     <!-- Expenses  -->
@@ -45,20 +45,20 @@
                         <div class=" ">
                             <div class="flex justify-center items-center gap-4 my-5 ">
                                 <p class="text-xl font-medium ">Food:</p>
-                                <input class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="3,000 ">
+                                <input id="food-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your food cost">
                             </div>
                             <div class="flex justify-center items-center gap-4 my-5 ">
                                 <p class="text-xl font-medium ">Rent:</p>
-                                <input class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="2,000 ">
+                                <input id="rent-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your rent cost">
                             </div>
                             <div class="flex justify-center items-center gap-4 my-5">
                                 <p class="text-xl font-medium ">Cloths:</p>
-                                <input class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="500 ">
+                                <input id="cloths-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your clothes cost">
                             </div>
 
                             <!-- button  -->
                             <div class="flex justify-center pt-5 px-auto">
-                                <button class="bg-indigo-500 text-white rounded px-14 py-3 text-xl font-medium">Calculate</button>
+                                <button id="calculate-btn" type="button" class="bg-indigo-500 text-white rounded px-14 py-3 text-xl font-medium">Calculate</button>
                             </div>
                         </div>
 
@@ -66,8 +66,8 @@
 
                     <!-- Total Expense and Balance  -->
                     <div class="flex flex-col ">
-                        <h2 class="text-2xl font-semibold text-center my-2">Total Expense: <span>4000</span></h2>
-                        <h2 class="text-2xl font-semibold text-center my-2">Balance: <span>6000</span></h2>
+                        <h2 class="text-2xl font-semibold text-center my-2">Total Expense: <span id="total-expense">0</span></h2>
+                        <h2 class="text-2xl font-semibold text-center my-2">Balance: <span id="balance-reduce">0</span></h2>
                     </div>
 
                     <!-- saving and remaining balance  -->
