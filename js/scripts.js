@@ -1,11 +1,7 @@
-// function calculateEarningAndExpense(){
-
-// };
-
 // calculate
 document.getElementById('calculate-btn').addEventListener('click', function() {
     // get income input value
-    const incomeInputField = document.getElementById('incomeInputField');
+    const incomeInputField = document.getElementById('income-input-field');
     const incomeInputFieldGetValue = incomeInputField.value;
     const incomeInputFieldGetValueConvert = parseInt(incomeInputFieldGetValue);
     // console.log(incomeInputFieldGetValueConvert)
@@ -58,6 +54,24 @@ document.getElementById('calculate-btn').addEventListener('click', function() {
     balanceReduce.innerText = diffrence;
 
 
+});
+
+
+// savings Selection
+document.getElementById('savings-calc-btn').addEventListener('click', function() {
+    event.preventDefault();
+    // get input value
+    const savingsInputField = document.getElementById('savings-input-field');
+    const savinsInputFieldGetValue = savingsInputField.value;
+    const savinsInputFieldGetValueConvert = parseInt(savinsInputFieldGetValue);
+    console.log(savinsInputFieldGetValueConvert)
+
+
+
+
+    // balance and savings convertion
+    // const savingsConversion = parseInt(savinsInputFieldGetValueConvert) % parseInt(balanceReduce);
+    // console.log(savingsConversion);
 
 
 })

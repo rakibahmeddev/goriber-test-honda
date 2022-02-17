@@ -36,21 +36,25 @@
                     <h3 class="text-3xl font-medium text-center ">Income</h3>
                     <div class="flex justify-center items-center px-4 2xl:px-36 gap-4 my-5 ">
                         <p class="text-xl font-medium ">Income:</p>
-                        <input id="incomeInputField" class="bg-white py-2 px-2 border-2 rounded w-full" type="text" placeholder="please type your income">
+                        <input id="income-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text" placeholder="please type your income">
                     </div>
 
                     <!-- Expenses  -->
                     <div class="my-5 bg-gray-100 w-full mx-auto p-4 2xl:px-36 ">
                         <h3 class="text-3xl font-medium text-center ">Expenses</h3>
                         <div class=" ">
+                            <!-- Food  -->
                             <div class="flex justify-center items-center gap-4 my-5 ">
                                 <p class="text-xl font-medium ">Food:</p>
                                 <input id="food-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your food cost">
                             </div>
+
+                            <!-- Rent  -->
                             <div class="flex justify-center items-center gap-4 my-5 ">
                                 <p class="text-xl font-medium ">Rent:</p>
                                 <input id="rent-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your rent cost">
                             </div>
+                            <!-- Cloths  -->
                             <div class="flex justify-center items-center gap-4 my-5">
                                 <p class="text-xl font-medium ">Cloths:</p>
                                 <input id="cloths-input-field" class="bg-white py-2 px-2 border-2 rounded w-full" type="text " placeholder="please type your clothes cost">
@@ -70,19 +74,25 @@
                         <h2 class="text-2xl font-semibold text-center my-2">Balance: <span id="balance-reduce">0</span></h2>
                     </div>
 
-                    <!-- saving and remaining balance  -->
+                    <!-- error message  -->
+                    <div>
+                        <span>Please insert a valid Number on Savings</span>
+                        <span>Please insert a valid Number on Savings</span>
+                    </div>
+
+                    <!-- savinsg and Interest balance  -->
                     <div class="my-8 p-2 2xl:px-20">
                         <div class="flex flex-row gap-3 items-center justify-center">
                             <p class="text-xl font-medium ">Save:</p>
-                            <input class="bg-white py-2 px-2 border-2 rounded w-20" type="text " placeholder="2%">
+                            <input id="savings-input-field" class="bg-white py-2 px-2 border-2 rounded w-20" type="text " placeholder="2">
                             <p class="text-2xl  px-4 py-2">%</p>
-                            <button class="bg-indigo-500 text-white rounded px-8 py-2 text-xl font-medium" type="button">Save</button>
+                            <a id="savings-calc-btn" class="bg-indigo-500 text-white rounded px-8 py-2 text-xl font-medium" href="">Save</a>
                         </div>
 
                         <!-- Savings ammount and Remaining Balance  -->
                         <div class="flex flex-col my-8">
                             <h2 class="text-2xl font-semibold text-center my-2">Savings Amount: <span>2000</span></h2>
-                            <h2 class="text-2xl font-semibold text-center my-2">Remaining Balance: <span>4000</span></h2>
+                            <h2 class="text-2xl font-semibold text-center my-2">Remaining Balance: <span class="remaining-balance">0</span></h2>
                         </div>
 
                     </div>
@@ -95,6 +105,7 @@
 
     <!-- Scripts  -->
     <script src="js/scripts.js "></script>
+    <!-- <script src="js/function.js "></script> -->
 </body>
 
 </html>
